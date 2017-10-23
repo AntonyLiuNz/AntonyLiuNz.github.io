@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="webpack," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="适配iOS11和iPhoneX导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentVi">
+<meta name="description" content="安装webpack安装webpack之前需要本地环境支持node 1cnpm install webpack -g 创建项目创建一个app目录 1mkdir app">
+<meta name="keywords" content="webpack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2017/10/18/适配iOS11和iPhoneX/index.html">
+<meta property="og:title" content="webpack简单使用">
+<meta property="og:url" content="http://yoursite.com/2017/10/23/webpack简单使用/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="适配iOS11和iPhoneX导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentVi">
+<meta property="og:description" content="安装webpack安装webpack之前需要本地环境支持node 1cnpm install webpack -g 创建项目创建一个app目录 1mkdir app">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-23T08:56:08.000Z">
+<meta property="og:updated_time" content="2017-10-23T09:02:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="适配iOS11和iPhoneX导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentVi">
+<meta name="twitter:title" content="webpack简单使用">
+<meta name="twitter:description" content="安装webpack安装webpack之前需要本地环境支持node 1cnpm install webpack -g 创建项目创建一个app目录 1mkdir app">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/18/适配iOS11和iPhoneX/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/23/webpack简单使用/"/>
 
 
 
 
 
-  <title> | Hexo</title>
+  <title>webpack简单使用 | Hexo</title>
   
 
 
@@ -234,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/适配iOS11和iPhoneX/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/webpack简单使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -251,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">webpack简单使用</h1>
         
 
         <div class="post-meta">
@@ -263,8 +264,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-18T15:01:18+08:00">
-                2017-10-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T16:59:28+08:00">
+                2017-10-23
               </time>
             
 
@@ -301,21 +302,10 @@
       
 
       
-        <hr>
-<h2 id="适配iOS11和iPhoneX"><a href="#适配iOS11和iPhoneX" class="headerlink" title="适配iOS11和iPhoneX"></a>适配iOS11和iPhoneX</h2><h2 id="导航栏适配"><a href="#导航栏适配" class="headerlink" title="导航栏适配"></a>导航栏适配</h2><p>在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];</div><div class="line">[contentView addSubview:btn];</div><div class="line">UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:contentView];</div></pre></td></tr></table></figure>
-<p>导航栏的偏移问题: 在iOS7之后新增的半透明属性translucent，默认为YES，在iPhoneX上会把导航栏顶到流海上，要解决需要把它设成NO，并且内部控制器要做相应的设配。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];</div><div class="line">[bar setBarTintColor:[UIColor whiteColor]]; // 导航栏颜色</div><div class="line">bar.translucent = NO; // 取消半透明</div></pre></td></tr></table></figure>
-<p>iPhone X中NavigationBar高度和TabBar高度都发生了变化：</p>
-<ol>
-<li>非iPhone X：StatusBar 高20pt，NavigationBar 高44pt，底部TabBar高49px；</li>
-<li>iPhone X：StatusBar 高44pt，NavigationBar 高44pt，底部TabBar高83pt；</li>
-<li>如果以前项目用的是宏定义64和49，那直接修改宏就可以了，否则只能全局修改这些常量为宏了。</li>
-</ol>
-<h2 id="iPhone-X适配相关宏"><a href="#iPhone-X适配相关宏" class="headerlink" title="iPhone X适配相关宏"></a>iPhone X适配相关宏</h2><p>适配顶部导航栏和底部TabBar</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#define isIphoneX ([[UIApplication sharedApplication] statusBarFrame].size.height == 44 ? YES : NO)</div><div class="line">#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height</div><div class="line">#define kNavBarHeight 44</div><div class="line">#define kBottomHomeHeight (isIphoneX ? 34 : 0)</div><div class="line">#define kTabBarHeight (isIphoneX ? 83 : 49)</div><div class="line">#define kTopHeight (kStatusBarHeight + kNavBarHeight)</div></pre></td></tr></table></figure>
-<p>解决ScrollView偏移问题, TableView和CollectionView同样适用.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#define adjustsScrollViewInsets_NO(scrollView,vc)\</div><div class="line">do &#123; \</div><div class="line">_Pragma(&quot;clang diagnostic push&quot;) \</div><div class="line">_Pragma(&quot;clang diagnostic ignored \&quot;-Warc-performSelector-leaks\&quot;&quot;) \</div><div class="line">if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;)]) &#123;\</div><div class="line">[scrollView   performSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;) withObject:@(2)];\</div><div class="line">&#125; else &#123;\</div><div class="line">vc.automaticallyAdjustsScrollViewInsets = NO;\</div><div class="line">&#125;\</div><div class="line">_Pragma(&quot;clang diagnostic pop&quot;) \</div><div class="line">&#125; while (0)</div></pre></td></tr></table></figure>
+        <h2 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h2><p>安装webpack之前需要本地环境支持node</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install webpack -g</div></pre></td></tr></table></figure>
+<h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个app目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir app</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -331,6 +321,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
+          
+        </div>
+      
 
       
       
@@ -340,14 +336,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/10/23/适配iOS11和iPhoneX/" rel="next" title="适配iOS11和iPhoneX">
+                <i class="fa fa-chevron-left"></i> 适配iOS11和iPhoneX
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/18/mac打开未知来源应用/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/23/mac打开未知来源应用/" rel="prev" title="mac打开未知来源应用">
+                mac打开未知来源应用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -425,7 +425,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -433,6 +433,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -471,7 +480,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#适配iOS11和iPhoneX"><span class="nav-number">1.</span> <span class="nav-text">适配iOS11和iPhoneX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导航栏适配"><span class="nav-number">2.</span> <span class="nav-text">导航栏适配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iPhone-X适配相关宏"><span class="nav-number">3.</span> <span class="nav-text">iPhone X适配相关宏</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装webpack"><span class="nav-number">1.</span> <span class="nav-text">安装webpack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建项目"><span class="nav-number">2.</span> <span class="nav-text">创建项目</span></a></li></ol></div>
             
 
           </div>
