@@ -64,6 +64,30 @@
   </entry>
   
   <entry>
+    <title>webpack简单使用</title>
+    <link href="http://yoursite.com/2017/10/23/webpack%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/10/23/webpack简单使用/</id>
+    <published>2017-10-23T08:59:28.000Z</published>
+    <updated>2017-10-23T09:02:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h2><p>安装webpack之前需要本地环境支持node</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install webpack -g</div></pre></td></tr></table></figure><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个app目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir app</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装webpack&quot;&gt;&lt;a href=&quot;#安装webpack&quot; class=&quot;headerlink&quot; title=&quot;安装webpack&quot;&gt;&lt;/a&gt;安装webpack&lt;/h2&gt;&lt;p&gt;安装webpack之前需要本地环境支持node&lt;/p&gt;
+&lt;figure class=
+      
+    
+    </summary>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS组件化开发</title>
     <link href="http://yoursite.com/2017/10/23/iOS%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2017/10/23/iOS组件化开发/</id>
@@ -111,30 +135,6 @@
     
     
       <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack简单使用</title>
-    <link href="http://yoursite.com/2017/10/23/webpack%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/10/23/webpack简单使用/</id>
-    <published>2017-10-23T08:59:28.000Z</published>
-    <updated>2017-10-23T09:02:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装webpack"><a href="#安装webpack" class="headerlink" title="安装webpack"></a>安装webpack</h2><p>安装webpack之前需要本地环境支持node</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install webpack -g</div></pre></td></tr></table></figure><h2 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h2><p>创建一个app目录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir app</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;安装webpack&quot;&gt;&lt;a href=&quot;#安装webpack&quot; class=&quot;headerlink&quot; title=&quot;安装webpack&quot;&gt;&lt;/a&gt;安装webpack&lt;/h2&gt;&lt;p&gt;安装webpack之前需要本地环境支持node&lt;/p&gt;
-&lt;figure class=
-      
-    
-    </summary>
-    
-    
-      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
     
   </entry>
   
