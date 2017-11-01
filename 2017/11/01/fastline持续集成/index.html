@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentView addSubview:bt">
+<meta name="description" content="fastline持续集成安装工具安装fastlane1sudo gem install -n /usr/local/bin/ fastlane 安装fir-cli1sudo gem install fir-cli 持续集成脚本脚本需要放在项目根目录1cd yourproject 创建脚本1vim app_build.sh 脚本代码1234567891011121314151617181920212">
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="适配iOS11和iPhoneX">
-<meta property="og:url" content="http://yoursite.com/2017/10/23/适配iOS11和iPhoneX/index.html">
+<meta property="og:title" content="fastline持续集成">
+<meta property="og:url" content="http://yoursite.com/2017/11/01/fastline持续集成/index.html">
 <meta property="og:site_name" content="Antony">
-<meta property="og:description" content="导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentView addSubview:bt">
+<meta property="og:description" content="fastline持续集成安装工具安装fastlane1sudo gem install -n /usr/local/bin/ fastlane 安装fir-cli1sudo gem install fir-cli 持续集成脚本脚本需要放在项目根目录1cd yourproject 创建脚本1vim app_build.sh 脚本代码1234567891011121314151617181920212">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-23T10:13:04.000Z">
+<meta property="og:updated_time" content="2017-11-01T06:32:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="适配iOS11和iPhoneX">
-<meta name="twitter:description" content="导航栏适配在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸 123UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];[contentView addSubview:bt">
+<meta name="twitter:title" content="fastline持续集成">
+<meta name="twitter:description" content="fastline持续集成安装工具安装fastlane1sudo gem install -n /usr/local/bin/ fastlane 安装fir-cli1sudo gem install fir-cli 持续集成脚本脚本需要放在项目根目录1cd yourproject 创建脚本1vim app_build.sh 脚本代码1234567891011121314151617181920212">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/23/适配iOS11和iPhoneX/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/01/fastline持续集成/"/>
 
 
 
 
 
-  <title>适配iOS11和iPhoneX | Antony</title>
+  <title>fastline持续集成 | Antony</title>
   
 
 
@@ -255,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/23/适配iOS11和iPhoneX/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/01/fastline持续集成/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Antony">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">适配iOS11和iPhoneX</h1>
+          <h1 class="post-title" itemprop="name headline">fastline持续集成</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-23T16:59:28+08:00">
-                2017-10-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-01T14:30:28+08:00">
+                2017-11-01
               </time>
             
 
@@ -300,8 +300,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-10-23T18:13:04+08:00">
-                2017-10-23
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-01T14:32:25+08:00">
+                2017-11-01
               </time>
             
           </span>
@@ -356,21 +356,13 @@
       
 
       
-        <h2 id="导航栏适配"><a href="#导航栏适配" class="headerlink" title="导航栏适配"></a>导航栏适配</h2><p>在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];</div><div class="line">[contentView addSubview:btn];</div><div class="line">UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:contentView];</div></pre></td></tr></table></figure>
-<p>导航栏的偏移问题: 在iOS7之后新增的半透明属性translucent，默认为YES，在iPhoneX上会把导航栏顶到流海上，要解决需要把它设成NO，并且内部控制器要做相应的设配。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];</div><div class="line">[bar setBarTintColor:[UIColor whiteColor]]; // 导航栏颜色</div><div class="line">bar.translucent = NO; // 取消半透明</div></pre></td></tr></table></figure>
-<p>iPhone X中NavigationBar高度和TabBar高度都发生了变化：</p>
-<ol>
-<li>非iPhone X：StatusBar 高20pt，NavigationBar 高44pt，底部TabBar高49px；</li>
-<li>iPhone X：StatusBar 高44pt，NavigationBar 高44pt，底部TabBar高83pt；</li>
-<li>如果以前项目用的是宏定义64和49，那直接修改宏就可以了，否则只能全局修改这些常量为宏了。</li>
-</ol>
-<h2 id="iPhone-X适配相关宏"><a href="#iPhone-X适配相关宏" class="headerlink" title="iPhone X适配相关宏"></a>iPhone X适配相关宏</h2><p>适配顶部导航栏和底部TabBar</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#define isIphoneX ([[UIApplication sharedApplication] statusBarFrame].size.height == 44 ? YES : NO)</div><div class="line">#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height</div><div class="line">#define kNavBarHeight 44</div><div class="line">#define kBottomHomeHeight (isIphoneX ? 34 : 0)</div><div class="line">#define kTabBarHeight (isIphoneX ? 83 : 49)</div><div class="line">#define kTopHeight (kStatusBarHeight + kNavBarHeight)</div></pre></td></tr></table></figure>
-<p>解决ScrollView偏移问题, TableView和CollectionView同样适用.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#define adjustsScrollViewInsets_NO(scrollView,vc)\</div><div class="line">do &#123; \</div><div class="line">_Pragma(&quot;clang diagnostic push&quot;) \</div><div class="line">_Pragma(&quot;clang diagnostic ignored \&quot;-Warc-performSelector-leaks\&quot;&quot;) \</div><div class="line">if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;)]) &#123;\</div><div class="line">[scrollView   performSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;) withObject:@(2)];\</div><div class="line">&#125; else &#123;\</div><div class="line">vc.automaticallyAdjustsScrollViewInsets = NO;\</div><div class="line">&#125;\</div><div class="line">_Pragma(&quot;clang diagnostic pop&quot;) \</div><div class="line">&#125; while (0)</div></pre></td></tr></table></figure>
-
+        <h2 id="fastline持续集成"><a href="#fastline持续集成" class="headerlink" title="fastline持续集成"></a>fastline持续集成</h2><h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><h4 id="安装fastlane"><a href="#安装fastlane" class="headerlink" title="安装fastlane"></a>安装fastlane</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install -n /usr/local/bin/ fastlane</div></pre></td></tr></table></figure>
+<h4 id="安装fir-cli"><a href="#安装fir-cli" class="headerlink" title="安装fir-cli"></a>安装fir-cli</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo gem install fir-cli</div></pre></td></tr></table></figure>
+<h3 id="持续集成脚本"><a href="#持续集成脚本" class="headerlink" title="持续集成脚本"></a>持续集成脚本</h3><h4 id="脚本需要放在项目根目录"><a href="#脚本需要放在项目根目录" class="headerlink" title="脚本需要放在项目根目录"></a>脚本需要放在项目根目录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd yourproject</div></pre></td></tr></table></figure>
+<h4 id="创建脚本"><a href="#创建脚本" class="headerlink" title="创建脚本"></a>创建脚本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim app_build.sh</div></pre></td></tr></table></figure>
+<h4 id="脚本代码"><a href="#脚本代码" class="headerlink" title="脚本代码"></a>脚本代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">#设置超时</div><div class="line">export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120</div><div class="line">#计时</div><div class="line">SECONDS=0</div><div class="line">#假设脚本放置在与项目相同的路径下</div><div class="line">project_path=$(pwd)</div><div class="line">#取当前时间字符串添加到文件结尾</div><div class="line">now=$(date +&quot;%Y_%m_%d_%H_%M_%S&quot;)</div><div class="line">#指定项目的scheme名称</div><div class="line">scheme=&quot;ios_fresh&quot;</div><div class="line">#指定要打包的配置名</div><div class="line">#测试环境测试包 configuration=&quot;Debug&quot;</div><div class="line">#正式环境测试包 configuration=&quot;Release&quot;</div><div class="line">configuration=&quot;AdHoc&quot;</div><div class="line">#指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数</div><div class="line">export_method=&apos;ad-hoc&apos;</div><div class="line">#指定项目地址</div><div class="line">workspace_path=&quot;$project_path/ios_fresh.xcworkspace&quot;</div><div class="line">#指定输出路径</div><div class="line">output_path=&quot;/Users/nanzengliu/Desktop/&quot;</div><div class="line">#指定输出归档文件地址</div><div class="line">archive_path=&quot;$output_path/ios_fresh_$&#123;now&#125;.xcarchive&quot;</div><div class="line">#指定输出ipa地址</div><div class="line">ipa_path=&quot;$output_path/ios_fresh_$&#123;now&#125;.ipa&quot;</div><div class="line">#指定输出ipa名称</div><div class="line">ipa_name=&quot;ios_fresh_$&#123;now&#125;.ipa&quot;</div><div class="line">#获取执行命令时的commit message</div><div class="line">commit_msg=&quot;$1&quot;</div><div class="line">#输出设定的变量值</div><div class="line">echo &quot;===workspace path: $&#123;workspace_path&#125;===&quot;</div><div class="line">echo &quot;===archive path: $&#123;archive_path&#125;===&quot;</div><div class="line">echo &quot;===ipa path: $&#123;ipa_path&#125;===&quot;</div><div class="line">echo &quot;===export method: $&#123;export_method&#125;===&quot;</div><div class="line">echo &quot;===commit msg: $1===&quot;</div><div class="line">#先清空前一次build</div><div class="line">fastlane gym --workspace $&#123;workspace_path&#125; --scheme $&#123;scheme&#125; --clean --configuration $&#123;configuration&#125; --archive_path $&#123;archive_path&#125; --export_method $&#123;export_method&#125; --output_directory $&#123;output_path&#125; --output_name $&#123;ipa_name&#125;</div><div class="line">#上传到fir</div><div class="line">fir publish $&#123;ipa_path&#125; -T &quot;633d7288b8a8e121365c4fa7703d1e15&quot; -c &quot;$&#123;commit_msg&#125;&quot;</div><div class="line">#输出总用时</div><div class="line">echo &quot;===Finished. Total time: $&#123;SECONDS&#125;s===&quot;</div></pre></td></tr></table></figure>
+<h4 id="获取脚本执行权限"><a href="#获取脚本执行权限" class="headerlink" title="获取脚本执行权限"></a>获取脚本执行权限</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x app_build.sh</div></pre></td></tr></table></figure>
+<h4 id="执行脚本"><a href="#执行脚本" class="headerlink" title="执行脚本"></a>执行脚本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./app_build.sh</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -400,14 +392,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/01/终端代理/" rel="next" title="终端代理">
+                <i class="fa fa-chevron-left"></i> 终端代理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/23/webpack简单使用/" rel="prev" title="webpack简单使用">
-                webpack简单使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/11/01/Mac环境变量相关/" rel="prev" title="Mac环境变量相关">
+                Mac环境变量相关 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +545,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#导航栏适配"><span class="nav-number">1.</span> <span class="nav-text">导航栏适配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iPhone-X适配相关宏"><span class="nav-number">2.</span> <span class="nav-text">iPhone X适配相关宏</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#fastline持续集成"><span class="nav-number">1.</span> <span class="nav-text">fastline持续集成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装工具"><span class="nav-number">1.1.</span> <span class="nav-text">安装工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装fastlane"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装fastlane</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装fir-cli"><span class="nav-number">1.1.2.</span> <span class="nav-text">安装fir-cli</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持续集成脚本"><span class="nav-number">1.2.</span> <span class="nav-text">持续集成脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#脚本需要放在项目根目录"><span class="nav-number">1.2.1.</span> <span class="nav-text">脚本需要放在项目根目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建脚本"><span class="nav-number">1.2.2.</span> <span class="nav-text">创建脚本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#脚本代码"><span class="nav-number">1.2.3.</span> <span class="nav-text">脚本代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取脚本执行权限"><span class="nav-number">1.2.4.</span> <span class="nav-text">获取脚本执行权限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#执行脚本"><span class="nav-number">1.2.5.</span> <span class="nav-text">执行脚本</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
