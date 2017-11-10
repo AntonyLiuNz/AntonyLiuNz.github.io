@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-01T06:49:26.000Z</updated>
+  <updated>2017-11-10T03:14:15.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mysql基本使用</title>
+    <link href="http://yoursite.com/2017/11/10/mysql%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/11/10/mysql基本使用/</id>
+    <published>2017-11-10T03:07:28.000Z</published>
+    <updated>2017-11-10T03:14:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Mysql基本使用"><a href="#Mysql基本使用" class="headerlink" title="Mysql基本使用"></a>Mysql基本使用</h2><h3 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install mysql</div></pre></td></tr></table></figure><h3 id="mysql服务"><a href="#mysql服务" class="headerlink" title="mysql服务"></a>mysql服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql.server start // 开启</div><div class="line">mysql.server stop // 关闭</div></pre></td></tr></table></figure><h3 id="修改密码等服务配置"><a href="#修改密码等服务配置" class="headerlink" title="修改密码等服务配置"></a>修改密码等服务配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql_secure_installation</div></pre></td></tr></table></figure><h3 id="终端显示内容"><a href="#终端显示内容" class="headerlink" title="终端显示内容"></a>终端显示内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div></pre></td><td class="code"><pre><div class="line">$ mysql_secure_installation</div><div class="line"></div><div class="line">Securing the MySQL server deployment.</div><div class="line"></div><div class="line">Enter password for user root:</div><div class="line"></div><div class="line">VALIDATE PASSWORD PLUGIN can be used to test passwords</div><div class="line">and improve security. It checks the strength of password</div><div class="line">and allows the users to set only those passwords which are</div><div class="line">secure enough. Would you like to setup VALIDATE PASSWORD plugin?</div><div class="line"></div><div class="line">Press y|Y for Yes, any other key for No: y</div><div class="line"></div><div class="line">There are three levels of password validation policy:</div><div class="line"></div><div class="line">LOW    Length &gt;= 8</div><div class="line">MEDIUM Length &gt;= 8, numeric, mixed case, and special characters</div><div class="line">STRONG Length &gt;= 8, numeric, mixed case, special characters and dictionary                  file</div><div class="line"></div><div class="line">Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: 0</div><div class="line">Using existing password for root.</div><div class="line"></div><div class="line">Estimated strength of the password: 50</div><div class="line">Change the password for root ? ((Press y|Y for Yes, any other key for No) : y</div><div class="line"></div><div class="line">New password:</div><div class="line"></div><div class="line">Re-enter new password:</div><div class="line"></div><div class="line">Estimated strength of the password: 50</div><div class="line">Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : y</div><div class="line">By default, a MySQL installation has an anonymous user,</div><div class="line">allowing anyone to log into MySQL without having to have</div><div class="line">a user account created for them. This is intended only for</div><div class="line">testing, and to make the installation go a bit smoother.</div><div class="line">You should remove them before moving into a production</div><div class="line">environment.</div><div class="line"></div><div class="line">Remove anonymous users? (Press y|Y for Yes, any other key for No) : y</div><div class="line">Success.</div><div class="line"></div><div class="line"></div><div class="line">Normally, root should only be allowed to connect from</div><div class="line">&apos;localhost&apos;. This ensures that someone cannot guess at</div><div class="line">the root password from the network.</div><div class="line"></div><div class="line">Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y</div><div class="line">Success.</div><div class="line"></div><div class="line">By default, MySQL comes with a database named &apos;test&apos; that</div><div class="line">anyone can access. This is also intended only for testing,</div><div class="line">and should be removed before moving into a production</div><div class="line">environment.</div><div class="line"></div><div class="line"></div><div class="line">Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y</div><div class="line"> - Dropping test database...</div><div class="line">Success.</div><div class="line"></div><div class="line"> - Removing privileges on test database...</div><div class="line">Success.</div><div class="line"></div><div class="line">Reloading the privilege tables will ensure that all changes</div><div class="line">made so far will take effect immediately.</div><div class="line"></div><div class="line">Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y</div><div class="line">Success.</div><div class="line"></div><div class="line">All done!</div></pre></td></tr></table></figure><h3 id="登录mysql"><a href="#登录mysql" class="headerlink" title="登录mysql"></a>登录mysql</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql -u root -p // 需要密码</div><div class="line">mysql -u root    // 不需要密码</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Mysql基本使用&quot;&gt;&lt;a href=&quot;#Mysql基本使用&quot; class=&quot;headerlink&quot; title=&quot;Mysql基本使用&quot;&gt;&lt;/a&gt;Mysql基本使用&lt;/h2&gt;&lt;h3 id=&quot;安装mysql&quot;&gt;&lt;a href=&quot;#安装mysql&quot; class=&quot;he
+      
+    
+    </summary>
+    
+      <category term="Mac" scheme="http://yoursite.com/categories/Mac/"/>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+  </entry>
   
   <entry>
     <title>Mac环境变量相关</title>
@@ -199,6 +224,31 @@
   </entry>
   
   <entry>
+    <title>适配iOS11和iPhoneX</title>
+    <link href="http://yoursite.com/2017/10/23/%E9%80%82%E9%85%8DiOS11%E5%92%8CiPhoneX/"/>
+    <id>http://yoursite.com/2017/10/23/适配iOS11和iPhoneX/</id>
+    <published>2017-10-23T08:59:28.000Z</published>
+    <updated>2017-10-23T10:13:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="导航栏适配"><a href="#导航栏适配" class="headerlink" title="导航栏适配"></a>导航栏适配</h2><p>在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];</div><div class="line">[contentView addSubview:btn];</div><div class="line">UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:contentView];</div></pre></td></tr></table></figure><p>导航栏的偏移问题: 在iOS7之后新增的半透明属性translucent，默认为YES，在iPhoneX上会把导航栏顶到流海上，要解决需要把它设成NO，并且内部控制器要做相应的设配。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];</div><div class="line">[bar setBarTintColor:[UIColor whiteColor]]; // 导航栏颜色</div><div class="line">bar.translucent = NO; // 取消半透明</div></pre></td></tr></table></figure><p>iPhone X中NavigationBar高度和TabBar高度都发生了变化：</p><ol><li>非iPhone X：StatusBar 高20pt，NavigationBar 高44pt，底部TabBar高49px；</li><li>iPhone X：StatusBar 高44pt，NavigationBar 高44pt，底部TabBar高83pt；</li><li>如果以前项目用的是宏定义64和49，那直接修改宏就可以了，否则只能全局修改这些常量为宏了。</li></ol><h2 id="iPhone-X适配相关宏"><a href="#iPhone-X适配相关宏" class="headerlink" title="iPhone X适配相关宏"></a>iPhone X适配相关宏</h2><p>适配顶部导航栏和底部TabBar</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#define isIphoneX ([[UIApplication sharedApplication] statusBarFrame].size.height == 44 ? YES : NO)</div><div class="line">#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height</div><div class="line">#define kNavBarHeight 44</div><div class="line">#define kBottomHomeHeight (isIphoneX ? 34 : 0)</div><div class="line">#define kTabBarHeight (isIphoneX ? 83 : 49)</div><div class="line">#define kTopHeight (kStatusBarHeight + kNavBarHeight)</div></pre></td></tr></table></figure><p>解决ScrollView偏移问题, TableView和CollectionView同样适用.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#define adjustsScrollViewInsets_NO(scrollView,vc)\</div><div class="line">do &#123; \</div><div class="line">_Pragma(&quot;clang diagnostic push&quot;) \</div><div class="line">_Pragma(&quot;clang diagnostic ignored \&quot;-Warc-performSelector-leaks\&quot;&quot;) \</div><div class="line">if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;)]) &#123;\</div><div class="line">[scrollView   performSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;) withObject:@(2)];\</div><div class="line">&#125; else &#123;\</div><div class="line">vc.automaticallyAdjustsScrollViewInsets = NO;\</div><div class="line">&#125;\</div><div class="line">_Pragma(&quot;clang diagnostic pop&quot;) \</div><div class="line">&#125; while (0)</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;导航栏适配&quot;&gt;&lt;a href=&quot;#导航栏适配&quot; class=&quot;headerlink&quot; title=&quot;导航栏适配&quot;&gt;&lt;/a&gt;导航栏适配&lt;/h2&gt;&lt;p&gt;在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不
+      
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
+    
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>webpack简单使用</title>
     <link href="http://yoursite.com/2017/10/23/webpack%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2017/10/23/webpack简单使用/</id>
@@ -221,31 +271,6 @@
     
     
       <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>适配iOS11和iPhoneX</title>
-    <link href="http://yoursite.com/2017/10/23/%E9%80%82%E9%85%8DiOS11%E5%92%8CiPhoneX/"/>
-    <id>http://yoursite.com/2017/10/23/适配iOS11和iPhoneX/</id>
-    <published>2017-10-23T08:59:28.000Z</published>
-    <updated>2017-10-23T10:13:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="导航栏适配"><a href="#导航栏适配" class="headerlink" title="导航栏适配"></a>导航栏适配</h2><p>在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不需要修改了,自定义图片需要把自定义的按钮包在UIView里面，显示出来的效果才是正确尺寸</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UIView *contentView = [[UIView alloc] initWithFrame:btn.frame];</div><div class="line">[contentView addSubview:btn];</div><div class="line">UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:contentView];</div></pre></td></tr></table></figure><p>导航栏的偏移问题: 在iOS7之后新增的半透明属性translucent，默认为YES，在iPhoneX上会把导航栏顶到流海上，要解决需要把它设成NO，并且内部控制器要做相应的设配。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self, nil];</div><div class="line">[bar setBarTintColor:[UIColor whiteColor]]; // 导航栏颜色</div><div class="line">bar.translucent = NO; // 取消半透明</div></pre></td></tr></table></figure><p>iPhone X中NavigationBar高度和TabBar高度都发生了变化：</p><ol><li>非iPhone X：StatusBar 高20pt，NavigationBar 高44pt，底部TabBar高49px；</li><li>iPhone X：StatusBar 高44pt，NavigationBar 高44pt，底部TabBar高83pt；</li><li>如果以前项目用的是宏定义64和49，那直接修改宏就可以了，否则只能全局修改这些常量为宏了。</li></ol><h2 id="iPhone-X适配相关宏"><a href="#iPhone-X适配相关宏" class="headerlink" title="iPhone X适配相关宏"></a>iPhone X适配相关宏</h2><p>适配顶部导航栏和底部TabBar</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#define isIphoneX ([[UIApplication sharedApplication] statusBarFrame].size.height == 44 ? YES : NO)</div><div class="line">#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height</div><div class="line">#define kNavBarHeight 44</div><div class="line">#define kBottomHomeHeight (isIphoneX ? 34 : 0)</div><div class="line">#define kTabBarHeight (isIphoneX ? 83 : 49)</div><div class="line">#define kTopHeight (kStatusBarHeight + kNavBarHeight)</div></pre></td></tr></table></figure><p>解决ScrollView偏移问题, TableView和CollectionView同样适用.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#define adjustsScrollViewInsets_NO(scrollView,vc)\</div><div class="line">do &#123; \</div><div class="line">_Pragma(&quot;clang diagnostic push&quot;) \</div><div class="line">_Pragma(&quot;clang diagnostic ignored \&quot;-Warc-performSelector-leaks\&quot;&quot;) \</div><div class="line">if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;)]) &#123;\</div><div class="line">[scrollView   performSelector:NSSelectorFromString(@&quot;setContentInsetAdjustmentBehavior:&quot;) withObject:@(2)];\</div><div class="line">&#125; else &#123;\</div><div class="line">vc.automaticallyAdjustsScrollViewInsets = NO;\</div><div class="line">&#125;\</div><div class="line">_Pragma(&quot;clang diagnostic pop&quot;) \</div><div class="line">&#125; while (0)</div></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;导航栏适配&quot;&gt;&lt;a href=&quot;#导航栏适配&quot; class=&quot;headerlink&quot; title=&quot;导航栏适配&quot;&gt;&lt;/a&gt;导航栏适配&lt;/h2&gt;&lt;p&gt;在iOS11上导航栏的自定义图片UIBarButton出现拉伸或位置错乱问题，如果是纯文字UIBarButton就不
-      
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://yoursite.com/categories/iOS/"/>
-    
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
   </entry>
   
